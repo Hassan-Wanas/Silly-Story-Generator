@@ -26,7 +26,18 @@ const insertZ = [
 
 randomize.addEventListener('click', result);
 
-
+/*
+this comment about what was wrong with the code,
+and i figered out what was the proplem,
+throgh seeing the elements part in the dev-tools,
+[Silly story generator](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator)
+the newStory var should be inside the funcetion,
+so it re-asigned every time the button got clicked,
+the (x-y-z)Item should also be inside the function,
+so it changes each time the button got clicked
+newStory is a string so it is immutable,
+so it need to be re-defined (re-asigned) to itself,
+*/
 
 
 function result() {
